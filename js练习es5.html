@@ -1,0 +1,82 @@
+<!DOCTYPE HTML>
+<html>
+
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+		<title>display</title>
+		<script type="text/javascript">
+			function hidetext() {
+				var mychar = document.getElementById("con");
+				mychar.style.display = "none";
+			}
+
+			function showtext() {
+				var mychar = document.getElementById("con");
+				mychar.style.display = "block";
+			}
+
+			function random() {
+				var a = document.getElementById("in").value
+				var b;
+				a = Math.ceil(a);
+				b = Math.round(Math.random() * a);
+				document.getElementById("out").value = b;
+			}
+
+			 function reverse(){
+ 				arr = document.getElementById("write").value
+ 				arr=arr.split("/");
+ 				function sorts(a,b){
+ 					return b - a;
+ 				}
+ 				arr=arr.sort(sorts);
+ 				document.getElementById("read").value=arr;
+ 			}
+
+			function add() {
+				var p1 = document.getElementById("list");
+				var p = document.createElement("p");
+				p.innerText = document.getElementById("a").value;
+				p1.appendChild(p);
+			}
+
+			function myremove() {
+				var lists = document.getElementById("list");
+				lists.removeChild(lists.lastChild);
+			}
+			
+			function removefirst() {
+				var lists = document.getElementById("list");
+				lists.removeChild(lists.firstChild);
+			}
+		</script>
+	</head>
+
+	<body>
+		<h3>隐藏与显示</h3>
+		<p id="con">文字文字文字文字文字文字文字文字文字文字文字文字文字文字文字文字文字文字文字文
+			字文字文字文字文字文字文字文字文字文字文字文字文字文字</p>
+		<form>
+			<input type="button" onclick="hidetext()" value="隐藏内容" />
+			<input type="button" onclick="showtext()" value="显示内容" />
+		</form>
+		
+		<h3>随机数</h3>
+		<input type="text" id="in" />
+		<input type="text" id="out" />
+		<input type="button" value="提交" onclick="random()" />
+		
+		<h3>排序</h3>
+		<input type="text" id="write" />
+		<input type="text" id="read" />
+		<input type="button" value="点击排序" onclick="reverse()"/>
+		
+		<h3>节点的增加删除</h3>
+		<input type="text" id="a" />
+		<input type="button" onclick="add()" value="添加" />
+		<input type="button" onclick="myremove()" value="删除最后一个" />
+		<input type="button" onclick="removefirst()" value="删除第一个" />
+		<div id="list"></div>
+	</body>
+
+</html>

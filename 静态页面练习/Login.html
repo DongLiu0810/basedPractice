@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<title></title>
+		<style>
+			.side{
+				width: 400px;
+				height: 296px;
+				border: solid 1px #979797;
+				box-shadow:0px 0px  10px 5px #aaa;
+				font-family: "microsoft yahei";
+			}
+			.text1{
+				border: none;
+				display: block;
+				width: 270px;
+				height: 28px;
+				border-radius: 6px;
+				margin-top: -28px;
+				margin-left: 33px;
+				color: #CCCCCC;
+				font-size: 14PX;
+			}
+			.text2{
+				border:none;
+				display: block;
+				width: 270px;
+				height: 28px;
+				border-radius: 6px;
+				margin-top: -28px;
+				margin-left: 33px;
+				color: #CCCCCC;
+				font-size: 14PX;
+			}
+			.check{
+				margin-left: 30px;
+				width: 16px;
+				height: 16px;
+			}
+			.forget{
+				float: right;
+				margin-right: 30px;
+				color: #4A90E2;
+				text-decoration: none;
+			}
+			.middle{
+				margin-top: 19px;
+				font-size: 14px;
+				color: #4A4A4A;
+				vertical-align:top;
+				font-family: PingFangSC;
+			}
+			.button{
+				width: 360px;
+				height: 40px;
+				background-color: #4A90E2;
+				border-radius: 6px;
+				color: white;
+				font-family: "arial rounded mt bold";
+				font-size: 14PX;
+				margin-top: 15px;
+				margin-left: 30px;
+			}
+			.last{
+				margin-left: 30px;
+				margin-top: 10px;
+				font-size: 15px;
+				color: #4A4A4A;
+			}
+			.last a{
+				text-decoration: none;
+				color: #4A90E2;
+			}
+			.w{
+				border:solid 1px #979797 ;
+				display: block;
+				width: 360px;
+				height: 40px;
+				border-radius: 5px;
+				margin-top: 40px;
+				margin-left: 30px;
+			}
+			.s{
+				border:solid 1px #979797 ;
+				display: block;
+				width: 360px;
+				height: 40px;
+				border-radius: 5px;
+				margin-top: 25px;
+				margin-left: 30px;
+			}
+			img{
+				width: 18px;
+				height: 19px;
+				margin-top: 9px;
+				margin-left: 10px;
+			}
+		</style>
+	</head>
+	<body>
+		<div class="side">
+			<form action="#">
+				<div class="w">
+					<img src="img/user.png" alt="正在加载"/>
+					<input type="text" class="text1" id="username" placeholder="用户名"/>
+				</div>
+				<div class="s">
+					<img src="img/pwd.png" alt="正在加载"/>
+					<input type="text" class="text2" id="pwd" placeholder="密码"/>
+				</div>
+				<div class="middle">
+					<input type="checkbox" class="check" />&nbsp;&nbsp;<span>记住我</span>
+					<a href="#" class="forget">忘记密码</a>
+				</div>					
+				<input type="submit" class="button" value="Log in"/>
+				<div class="last">还没有账号？去<a href="#">注册>></a></div>
+			</form>
+		</div>
+	</body>
+</html>

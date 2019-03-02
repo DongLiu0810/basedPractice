@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<style>
+			.box{
+				width:1063px;
+				height:240px;
+				border: solid hsl(189, 68%, 50%) 1px;
+			}
+			.nav{
+				width:1024px;
+				height:50px;
+				background:rgba(87,100,119,1);
+				margin-top: 35px;
+				margin-left: 22px;
+			}
+			.logo{
+				width: 58px;
+				height: 22px;
+				margin-top:14px ;
+				margin-left: 40px;
+			}
+			.menu{
+
+				font-size:16px;
+				float:right;
+				font-family:MicrosoftYaHei;
+				color:rgba(215,215,215,1);
+				line-height:21px;
+				display:block;
+				margin-right: 56px;
+				margin-top: -16px;
+			}
+			.list-1>li{
+				display: inline-block;
+				vertical-align: top;
+				padding: 15px 20px 14px 20px;
+				position: relative;
+			}
+			li{
+				list-style-type:none ;
+			}
+			.list-2{
+				font-size:16px;
+				font-family:MicrosoftYaHei;
+				color:rgba(215,215,215,1);
+				background:rgba(87,100,119,1);
+				padding: 0px ;
+				width: 90px;
+				line-height:21px;
+				top:50px;
+				left: 0px;
+				visibility: hidden;
+				position: absolute;
+			}
+			.list-2>li{
+				padding: 10px 10px;
+			}
+			.list-1>li:hover ul{
+				visibility:visible;
+			}
+			.list-1>li:hover{
+				background:rgba(74,74,74,1);
+			}
+			.list-2 li:hover{
+				background:rgba(74,74,74,1);
+			}
+			
+		</style>
+	</head>
+	<body>
+		<div class="box">
+			<div class="nav">
+				<img src="img/logo.png" class="logo"/>
+				<div class="menu">
+				<ul class="list-1">	
+					<li>导航一</li>
+					<li>导航二</li>
+					<li>导航三
+						<ul class="list-2">
+							<li>子导航一</li>
+							<li>子导航二</li>
+							<li>子导航三</li>
+						</ul>
+					</li>
+					<li>导航四</li>
+					<li>导航五</li>
+					<li>导航六</li>
+				</ul>	
+				</div>
+			</div>
+		</div>
+	</body>
+</html>
